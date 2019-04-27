@@ -1,5 +1,9 @@
+<% if logged_in %>
+    <p>ログイン完了ユーザ: <%= current_user.name %></p>
 <div class="center jumpbotron">
     <div class="text-center">
         <h1>Welcome to Tasklists</h1>
+        <%= link_to "Sign up now", signup_path, class: "btn btn-lg btn-primary" %>
     </div>
 </div>
+<% end %>
